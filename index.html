@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Pudari Harish - Aspiring Data Analyst specializing in Data Analytics, Python, SQL, Power BI, and Generative AI.">
+    <meta name="keywords" content="Pudari Harish, Data Analyst, Portfolio, Python, SQL, Power BI, Generative AI, Hyderabad">
+    <meta name="author" content="Pudari Harish">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pudari Harish | Data Analyst Portfolio">
+    <meta property="og:description" content="Data Analyst with expertise in data cleaning, EDA, visualization, SQL, and Python.">
+    <meta property="og:type" content="website">
+
+    <title>Pudari Harish | Data Analyst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header" id="header">
+        <nav class="navbar container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-badge">PH</span>
+                <span class="logo-text">Harish<span>.data</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="mobile-cta">
+                    <a href="assets/resume.pdf" target="_blank" download class="btn btn-outline btn-sm">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" target="_blank" download class="btn btn-outline btn-sm desktop-only">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-grid"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Available for Data Analytics Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Pudari Harish</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Aspiring Data Analyst & GenAI Enthusiast</h2>
+                    <p class="hero-description">
+                        Transforming complex raw data into actionable business intelligence through structured statistical analysis, robust SQL pipelines, interactive Power BI dashboards, and Python visual analytics.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span class="tag"><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</span>
+                        <span class="tag"><i class="fa-solid fa-graduation-cap"></i> B.Tech ECE (2022–2026)</span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/resume.pdf" target="_blank" download class="btn btn-secondary">
+                            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-icon" aria-label="Contact Me">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="mailto:pudariharish53@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919392541859" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-card-wrapper">
+                        <div class="code-card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">data_analyst_profile.py</span>
+                        </div>
+                        <pre class="code-card-body"><code><span class="keyword">class</span> <span class="class-name">DataAnalyst</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Pudari Harish"</span>
+        self.location = <span class="string">"Hyderabad, Telangana"</span>
+        self.focus = [<span class="string">"EDA"</span>, <span class="string">"Dashboarding"</span>, <span class="string">"GenAI"</span>]
+        self.tech_stack = {
+            <span class="string">"language"</span>: [<span class="string">"Python"</span>, <span class="string">"SQL"</span>],
+            <span class="string">"bi_tools"</span>: [<span class="string">"Power BI"</span>, <span class="string">"Excel"</span>],
+            <span class="string">"libraries"</span>: [<span class="string">"Pandas"</span>, <span class="string">"NumPy"</span>, <span class="string">"Seaborn"</span>]
+        }
+
+    <span class="keyword">def</span> <span class="function">get_objective</span>(self):
+        <span class="keyword">return</span> <span class="string">"Extract meaningful insights & support data-driven decisions."</span>
+
+harish = DataAnalyst()
+print(harish.get_objective())</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">01. Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-about">
+                        <h3>Professional Profile</h3>
+                        <p>
+                            I am an <strong>Aspiring Data Analyst</strong> with a strong academic foundation in Electronics & Communication Engineering and specialized training in Data Analytics and Generative AI. 
+                        </p>
+                        <p>
+                            Proficient in collecting, cleaning, analyzing, and interpreting complex datasets. I excel at converting unstructured data into clear interactive dashboards and statistical models to solve real-world business problems and drive growth strategies.
+                        </p>
+                        <div class="languages-box">
+                            <h4><i class="fa-solid fa-language"></i> Spoken Languages</h4>
+                            <div class="pill-group">
+                                <span class="pill">Telugu (Native)</span>
+                                <span class="pill">English (Professional Working)</span>
+                                <span class="pill">Hindi (Basic)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Key Analytical Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Professional Certifications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Core Data Tools & Tech</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="stat-number">GenAI</div>
+                            <div class="stat-label">Specialized Training</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">02. Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h3>Data Analytics Core</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i class="fa-solid fa-check"></i> Data Collection & Cleaning</li>
+                            <li><i class="fa-solid fa-check"></i> Exploratory Data Analysis (EDA)</li>
+                            <li><i class="fa-solid fa-check"></i> Data Visualization & Dashboarding</li>
+                            <li><i class="fa-solid fa-check"></i> Statistical Analysis</li>
+                            <li><i class="fa-solid fa-check"></i> Data Interpretation & Reporting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal"></i>
+                            <h3>Programming & Querying</h3>
+                        </div>
+                        <div class="tech-tags-grid">
+                            <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+                            <div class="tech-item"><i class="fa-solid fa-database"></i> SQL</div>
+                            <div class="tech-item"><i class="fa-solid fa-table"></i> Advanced Excel</div>
+                            <div class="tech-item"><i class="fa-solid fa-file-excel"></i> Google Sheets</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Libraries & Tools</h3>
+                        </div>
+                        <div class="tech-tags-grid">
+                            <div class="tech-item">Pandas</div>
+                            <div class="tech-item">NumPy</div>
+                            <div class="tech-item">Matplotlib</div>
+                            <div class="tech-item">Seaborn</div>
+                            <div class="tech-item"><i class="fa-solid fa-chart-column"></i> Power BI</div>
+                            <div class="tech-item">Jupyter Notebook</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <ul class="skill-list horizontal">
+                            <li><span class="badge-skill">Attention to Detail</span></li>
+                            <li><span class="badge-skill">Time Management</span></li>
+                            <li><span class="badge-skill">Problem Solving</span></li>
+                            <li><span class="badge-skill">Good Communication</span></li>
+                            <li><span class="badge-skill">Analytical Thinking</span></li>
+                            <li><span class="badge-skill">Team Collaboration</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">03. Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-chart-line"></i> Business Intelligence</span>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Sales Analysis Dashboard</h3>
+                        <p class="project-description">
+                            Analyzed sales data to discover revenue trends, isolate top-performing product categories, and generate key business insights using Excel Pivot Tables and Power BI.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Deliverables:</h4>
+                            <ul>
+                                <li>Built interactive KPI cards and trend visuals in Power BI.</li>
+                                <li>Structured raw sales logs using Excel Pivot Tables and charts.</li>
+                                <li>Identified growth areas to assist in strategic sales decision-making.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Pivot Tables</span>
+                            <span>Data Modeling</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-users"></i> Customer Analytics</span>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Customer Segmentation Analysis</h3>
+                        <p class="project-description">
+                            Executed Recency, Frequency, and Monetary (RFM) analysis to segment customer bases into actionable behavior cohorts using Python data science stack.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Deliverables:</h4>
+                            <ul>
+                                <li>Cleaned and structured transactional records using Pandas & NumPy.</li>
+                                <li>Visualized cluster metrics via Matplotlib and Seaborn distributions.</li>
+                                <li>Provided retention strategies to improve target marketing efforts.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                            <span>RFM Analysis</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-microchip"></i> IoT & Environmental Data</span>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Solar Sea Weather & Pollution Transmits Buoy</h3>
+                        <p class="project-description">
+                            Designed a solar-powered environmental telemetry buoy system that monitors sea weather conditions and water pollution levels in real-time.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Deliverables:</h4>
+                            <ul>
+                                <li>Integrated environmental sensors with wireless communication modules.</li>
+                                <li>Collected continuous environmental data streams remotely.</li>
+                                <li>Transmitted telemetry metrics to monitoring stations for analysis.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>Sensors</span>
+                            <span>Telemetry</span>
+                            <span>Wireless Comms</span>
+                            <span>Data Transmission</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Training Section -->
+        <section id="education" class="section education-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">04. Academic Background</span>
+                    <h2 class="section-title">Education & Specialized Training</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - 2026</div>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech) - ECE</h3>
+                            <h4 class="timeline-institution">Malla Reddy College of Engineering | Hyderabad, Telangana</h4>
+                            <div class="timeline-badge">CGPA: 6.8</div>
+                            <p>Specializing in Electronics & Communication Engineering with focus on signal processing, data systems, and hardware-software integration.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item highlight-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-robot"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Ongoing</div>
+                            <h3 class="timeline-title">Data Analytics with Generative AI Training</h3>
+                            <h4 class="timeline-institution">QSpiders / JSpiders | Punjagutta, Hyderabad</h4>
+                            <div class="timeline-badge focus">Professional Training</div>
+                            <p>Intensive hands-on training covering advanced SQL, Python data libraries, Power BI dashboard construction, statistical methods, and AI-assisted data workflows.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <h3 class="timeline-title">Intermediate (MPC)</h3>
+                            <h4 class="timeline-institution">Sree Gayathri Junior College | Kamareddy, Telangana</h4>
+                            <div class="timeline-badge">Percentage: 82%</div>
+                            <p>Focused on Mathematics, Physics, and Chemistry core foundations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-award"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <h3 class="timeline-title">Secondary School Certificate (10th)</h3>
+                            <h4 class="timeline-institution">Gnana Vaagdevi Vidyalayam | Indalwai, Telangana</h4>
+                            <div class="timeline-badge">CGPA: 10.0</div>
+                            <p>Completed secondary education with perfect cumulative grade point average score.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">05. Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="cert-info">
+                            <h3>Oracle Cloud Infrastructure Certification</h3>
+                            <p>Demonstrates proficiency in cloud infrastructure, foundational cloud operations, compute services, and cloud data architecture.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="cert-info">
+                            <h3>PCB Simulation and Design Certification</h3>
+                            <p>Validates technical knowledge in circuit simulation, hardware layout design, and electronic prototyping standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="section highlights-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">06. Strengths</span>
+                    <h2 class="section-title">Career Highlights & Strengths</h2>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h3>Analytical Rigor</h3>
+                        <p>Proven capability to clean, slice, and transform complex unstructured datasets into coherent reports.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3>GenAI Augmented</h3>
+                        <p>Leveraging state-of-the-art Generative AI tooling to accelerate query optimization, EDA code, and insights extraction.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>Business Orientated</h3>
+                        <p>Focused on converting metrics into actionable insights for marketing, customer retention, and sales improvements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">07. Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-description">
+                        I am actively seeking Data Analyst roles, internships, and entry-level opportunities. Feel free to reach out directly!
+                    </p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info-cards">
+                        <a href="mailto:pudariharish53@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-detail">
+                                <span class="label">Email Me</span>
+                                <span class="value">pudariharish53@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919392541859" class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-detail">
+                                <span class="label">Call Me</span>
+                                <span class="value">+91 9392541859</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-detail">
+                                <span class="label">Location</span>
+                                <span class="value">Hyderabad, Telangana, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Data Analyst Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Harish, I would like to discuss..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-badge">PH</span>
+                    <span class="logo-text">Harish<span>.data</span></span>
+                </a>
+                <p>Aspiring Data Analyst | Electronics & Communication Graduate</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="mailto:pudariharish53@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919392541859" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Pudari Harish. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
+```

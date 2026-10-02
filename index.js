@@ -1,56 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Footer Copyright Year
-    const yearEl = document.getElementById('current-year');
-    if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
+    // 1. Dynamic Footer Year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
 
     // 2. Mobile Menu Toggle
-    const hamburger = document.getElementById('hamburger-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
 
-        document.querySelectorAll('.nav-link').forEach(link => {
+        document.querySelectorAll('.nav-item').forEach(link => {
             link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
+                navLinks.classList.remove('active');
             });
         });
     }
 
-    // 3. Active Nav Link on Scroll
+    // 3. Active Nav Scroll Highlight
     const sections = document.querySelectorAll('section[id]');
 
-    const highlightNav = () => {
+    const scrollActive = () => {
         const scrollY = window.pageYOffset;
 
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 100;
             const sectionId = current.getAttribute('id');
-            const navLink = document.querySelector(`.nav-list a[href*=${sectionId}]`);
+            const navItem = document.querySelector(`.nav-links a[href*=${sectionId}]`);
 
-            if (navLink) {
+            if (navItem) {
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    navLink.classList.add('active');
+                    navItem.classList.add('active');
                 } else {
-                    navLink.classList.remove('active');
+                    navItem.classList.remove('active');
                 }
             }
         });
     };
 
-    window.addEventListener('scroll', highlightNav);
+    window.addEventListener('scroll', scrollActive);
 
-    // 4. Back to Top Button
-    const scrollTopBtn = document.getElementById('scroll-top-btn');
+    // 4. Scroll To Top Control
+    const scrollTopBtn = document.getElementById('scrollTop');
 
     if (scrollTopBtn) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 350) {
+            if (window.scrollY > 300) {
                 scrollTopBtn.classList.add('show');
             } else {
                 scrollTopBtn.classList.remove('show');
@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Contact Form Handler
-    const contactForm = document.getElementById('contact-form');
+    // 5. Contact Form Submission Feedback
+    const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             const btn = contactForm.querySelector('button[type="submit"]');
